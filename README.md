@@ -54,6 +54,10 @@ I hope you find this project helpful. :)
 ![Image](images/ss2_240.jpeg)
 ![GIF](images/gif_480p.gif)
 
+Geographical Location Tracking during an AR session
+
+![Image](images/arSimpleLocation_slide.png)
+
 ## Models
 
 This project uses Apple's USDZ model files. You can download other models.
