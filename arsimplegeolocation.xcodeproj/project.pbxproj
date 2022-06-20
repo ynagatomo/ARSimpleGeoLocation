@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA0557A7285D808800948C32 /* arsimplegeolocationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0557A6285D808800948C32 /* arsimplegeolocationApp.swift */; };
+		BA0557A9285D808800948C32 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0557A8285D808800948C32 /* HomeView.swift */; };
+		BA0557AB285D808A00948C32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0557AA285D808A00948C32 /* Assets.xcassets */; };
+		BA0557AE285D808A00948C32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0557AD285D808A00948C32 /* Preview Assets.xcassets */; };
+		BA0557B7285D903E00948C32 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0557B6285D903E00948C32 /* SettingsView.swift */; };
+		BA0557BB285D916500948C32 /* ModelAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0557BA285D916500948C32 /* ModelAsset.swift */; };
+		BA0557BE285D9A6500948C32 /* ARContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0557BD285D9A6500948C32 /* ARContainerView.swift */; };
+		BA0557C0285D9AA000948C32 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0557BF285D9AA000948C32 /* ARViewController.swift */; };
+		BA0557C3285D9AD400948C32 /* ARScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0557C2285D9AD400948C32 /* ARScene.swift */; };
+		BA0557C7285DAB5200948C32 /* DeviceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0557C6285DAB5200948C32 /* DeviceLocation.swift */; };
+		BA0557C9285DAEEC00948C32 /* ARLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0557C8285DAEEC00948C32 /* ARLocationView.swift */; };
+		BA0557CC285DAF7300948C32 /* AppStateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0557CB285DAF7300948C32 /* AppStateController.swift */; };
+		BA0557CE285EDC2D00948C32 /* toy_drummer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BA0557CD285EDC2D00948C32 /* toy_drummer.usdz */; };
+		BA0557D0285EDC9400948C32 /* ModelDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0557CF285EDC9400948C32 /* ModelDataSet.swift */; };
+		BA6539E6285F31B6005D06E1 /* LocationUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6539E5285F31B6005D06E1 /* LocationUtility.swift */; };
+		BA801008285FEB1000897E3D /* debugLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA801007285FEB1000897E3D /* debugLog.swift */; };
+		BA80100E285FFA2900897E3D /* toy_robot_vintage.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BA80100D285FFA2900897E3D /* toy_robot_vintage.usdz */; };
+		BA801010285FFA3200897E3D /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BA80100F285FFA3200897E3D /* toy_biplane.usdz */; };
+		BA801013286001F000897E3D /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA801012286001F000897E3D /* AppSettings.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BA0557A3285D808800948C32 /* arsimplegeolocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = arsimplegeolocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA0557A6285D808800948C32 /* arsimplegeolocationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arsimplegeolocationApp.swift; sourceTree = "<group>"; };
+		BA0557A8285D808800948C32 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BA0557AA285D808A00948C32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA0557AD285D808A00948C32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BA0557B5285D887200948C32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BA0557B6285D903E00948C32 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BA0557BA285D916500948C32 /* ModelAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelAsset.swift; sourceTree = "<group>"; };
+		BA0557BD285D9A6500948C32 /* ARContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARContainerView.swift; sourceTree = "<group>"; };
+		BA0557BF285D9AA000948C32 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		BA0557C2285D9AD400948C32 /* ARScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARScene.swift; sourceTree = "<group>"; };
+		BA0557C6285DAB5200948C32 /* DeviceLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceLocation.swift; sourceTree = "<group>"; };
+		BA0557C8285DAEEC00948C32 /* ARLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARLocationView.swift; sourceTree = "<group>"; };
+		BA0557CB285DAF7300948C32 /* AppStateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateController.swift; sourceTree = "<group>"; };
+		BA0557CD285EDC2D00948C32 /* toy_drummer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_drummer.usdz; sourceTree = "<group>"; };
+		BA0557CF285EDC9400948C32 /* ModelDataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDataSet.swift; sourceTree = "<group>"; };
+		BA6539E5285F31B6005D06E1 /* LocationUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationUtility.swift; sourceTree = "<group>"; };
+		BA801007285FEB1000897E3D /* debugLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = debugLog.swift; sourceTree = "<group>"; };
+		BA80100D285FFA2900897E3D /* toy_robot_vintage.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_robot_vintage.usdz; sourceTree = "<group>"; };
+		BA80100F285FFA3200897E3D /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
+		BA801012286001F000897E3D /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		BA8559B828607B0300CFEE4D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA0557A0285D808800948C32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA05579A285D808800948C32 = {
+			isa = PBXGroup;
+			children = (
+				BA8559B828607B0300CFEE4D /* README.md */,
+				BA0557A5285D808800948C32 /* arsimplegeolocation */,
+				BA0557A4285D808800948C32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA0557A4285D808800948C32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA0557A3285D808800948C32 /* arsimplegeolocation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA0557A5285D808800948C32 /* arsimplegeolocation */ = {
+			isa = PBXGroup;
+			children = (
+				BA0557B5285D887200948C32 /* Info.plist */,
+				BA0557A6285D808800948C32 /* arsimplegeolocationApp.swift */,
+				BA0557B8285D911B00948C32 /* Views */,
+				BA0557CA285DAF5700948C32 /* AppStateController */,
+				BA0557C1285D9AC300948C32 /* ARScene */,
+				BA0557B9285D913A00948C32 /* DataModel */,
+				BA801011286001D800897E3D /* Settings */,
+				BA6539E4285F3195005D06E1 /* Utilities */,
+				BA0557BC285D91E400948C32 /* ModelAssets */,
+				BA0557AA285D808A00948C32 /* Assets.xcassets */,
+				BA0557AC285D808A00948C32 /* Preview Content */,
+			);
+			path = arsimplegeolocation;
+			sourceTree = "<group>";
+		};
+		BA0557AC285D808A00948C32 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BA0557AD285D808A00948C32 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BA0557B8285D911B00948C32 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA0557A8285D808800948C32 /* HomeView.swift */,
+				BA0557C8285DAEEC00948C32 /* ARLocationView.swift */,
+				BA0557B6285D903E00948C32 /* SettingsView.swift */,
+				BA0557BD285D9A6500948C32 /* ARContainerView.swift */,
+				BA0557BF285D9AA000948C32 /* ARViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BA0557B9285D913A00948C32 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				BA0557BA285D916500948C32 /* ModelAsset.swift */,
+				BA0557CF285EDC9400948C32 /* ModelDataSet.swift */,
+				BA0557C6285DAB5200948C32 /* DeviceLocation.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		BA0557BC285D91E400948C32 /* ModelAssets */ = {
+			isa = PBXGroup;
+			children = (
+				BA0557CD285EDC2D00948C32 /* toy_drummer.usdz */,
+				BA80100D285FFA2900897E3D /* toy_robot_vintage.usdz */,
+				BA80100F285FFA3200897E3D /* toy_biplane.usdz */,
+			);
+			path = ModelAssets;
+			sourceTree = "<group>";
+		};
+		BA0557C1285D9AC300948C32 /* ARScene */ = {
+			isa = PBXGroup;
+			children = (
+				BA0557C2285D9AD400948C32 /* ARScene.swift */,
+			);
+			path = ARScene;
+			sourceTree = "<group>";
+		};
+		BA0557CA285DAF5700948C32 /* AppStateController */ = {
+			isa = PBXGroup;
+			children = (
+				BA0557CB285DAF7300948C32 /* AppStateController.swift */,
+			);
+			path = AppStateController;
+			sourceTree = "<group>";
+		};
+		BA6539E4285F3195005D06E1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BA6539E5285F31B6005D06E1 /* LocationUtility.swift */,
+				BA801007285FEB1000897E3D /* debugLog.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BA801011286001D800897E3D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				BA801012286001F000897E3D /* AppSettings.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA0557A2285D808800948C32 /* arsimplegeolocation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA0557B1285D808A00948C32 /* Build configuration list for PBXNativeTarget "arsimplegeolocation" */;
+			buildPhases = (
+				BA05579F285D808800948C32 /* Sources */,
+				BA0557A0285D808800948C32 /* Frameworks */,
+				BA0557A1285D808800948C32 /* Resources */,
+				BA0557B4285D80B100948C32 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = arsimplegeolocation;
+			productName = arsimplegeolocation;
+			productReference = BA0557A3285D808800948C32 /* arsimplegeolocation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA05579B285D808800948C32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					BA0557A2285D808800948C32 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = BA05579E285D808800948C32 /* Build configuration list for PBXProject "arsimplegeolocation" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA05579A285D808800948C32;
+			productRefGroup = BA0557A4285D808800948C32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA0557A2285D808800948C32 /* arsimplegeolocation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA0557A1285D808800948C32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA80100E285FFA2900897E3D /* toy_robot_vintage.usdz in Resources */,
+				BA801010285FFA3200897E3D /* toy_biplane.usdz in Resources */,
+				BA0557AE285D808A00948C32 /* Preview Assets.xcassets in Resources */,
+				BA0557AB285D808A00948C32 /* Assets.xcassets in Resources */,
+				BA0557CE285EDC2D00948C32 /* toy_drummer.usdz in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BA0557B4285D80B100948C32 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Adds support for Apple Silicon brew directory\nexport PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA05579F285D808800948C32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA0557A9285D808800948C32 /* HomeView.swift in Sources */,
+				BA0557BE285D9A6500948C32 /* ARContainerView.swift in Sources */,
+				BA0557A7285D808800948C32 /* arsimplegeolocationApp.swift in Sources */,
+				BA6539E6285F31B6005D06E1 /* LocationUtility.swift in Sources */,
+				BA0557CC285DAF7300948C32 /* AppStateController.swift in Sources */,
+				BA0557C9285DAEEC00948C32 /* ARLocationView.swift in Sources */,
+				BA0557C0285D9AA000948C32 /* ARViewController.swift in Sources */,
+				BA801013286001F000897E3D /* AppSettings.swift in Sources */,
+				BA0557C3285D9AD400948C32 /* ARScene.swift in Sources */,
+				BA0557D0285EDC9400948C32 /* ModelDataSet.swift in Sources */,
+				BA801008285FEB1000897E3D /* debugLog.swift in Sources */,
+				BA0557BB285D916500948C32 /* ModelAsset.swift in Sources */,
+				BA0557C7285DAB5200948C32 /* DeviceLocation.swift in Sources */,
+				BA0557B7285D903E00948C32 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BA0557AF285D808A00948C32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA0557B0285D808A00948C32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA0557B2285D808A00948C32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"arsimplegeolocation/Preview Content\"";
+				DEVELOPMENT_TEAM = J5CY9Q9UP5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = arsimplegeolocation/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "AR Simple GeoLocation";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera for AR.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires location information.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "location-services gps magnetometer";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atarayosd.arsimplegeolocation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA0557B3285D808A00948C32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"arsimplegeolocation/Preview Content\"";
+				DEVELOPMENT_TEAM = J5CY9Q9UP5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = arsimplegeolocation/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "AR Simple GeoLocation";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera for AR.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires location information.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "location-services gps magnetometer";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atarayosd.arsimplegeolocation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA05579E285D808800948C32 /* Build configuration list for PBXProject "arsimplegeolocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA0557AF285D808A00948C32 /* Debug */,
+				BA0557B0285D808A00948C32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA0557B1285D808A00948C32 /* Build configuration list for PBXNativeTarget "arsimplegeolocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA0557B2285D808A00948C32 /* Debug */,
+				BA0557B3285D808A00948C32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA05579B285D808800948C32 /* Project object */;
+}

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "robot128.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
