@@ -16,7 +16,7 @@ The project;
 - Xcode 14.0 beta 1 (The project file requires Xcode 14.0 or later.)
 - Target: iOS / iPadOS 15.0 and later (You can easily change to iOS 14 support.)
 - Frameworks: SwiftUI, ARKit, RealityKit, Core Location
-- Before running the app, modify `ModelDataSet` file to specify geographical locations near you
+- Before running the app, modify `ModelDataSet.swift` file to specify geographical locations near you
 
 ```swift:ModelDataSet.swift
 ModelAsset(
@@ -52,7 +52,7 @@ I hope you find this project helpful. :)
 
 ![Image](images/ss1_240.PNG)
 ![Image](images/ss2_240.jpeg)
-![GIF](images/gif_240p.gif)
+![GIF](images/gif_480p.gif)
 
 ## Models
 
