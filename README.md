@@ -58,6 +58,10 @@ Geographical Location Tracking during an AR session
 
 ![Image](images/arSimpleLocation_slide.png)
 
+Type structure
+
+![Image](images/arSimpleGeolocation_type_structure_r10.png)
+
 ## Models
 
 This project uses Apple's USDZ model files. You can download other models.
