@@ -106,7 +106,7 @@ extension AppStateController {
         }
 
         // [Note] On supported platforms the default value of this property is true
-        assert(locationManager.pausesLocationUpdatesAutomatically == true)
+        // assert(locationManager.pausesLocationUpdatesAutomatically == true)
         #endif
 
         // [Note]

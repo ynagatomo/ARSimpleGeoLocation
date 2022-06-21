@@ -14,6 +14,15 @@ class AppSettings {
     static let showingCoordinateDefault = true
     static let distanceFilterDefault: Double = 3.0 // [m]
 
+    static let enablePlaneDetectionDefault = true
+    static let enablePeopleOcclusionDefault = false
+    static let enableObjectOcclusionDefault = false
+
+    // AR capabilities
+    @AppStorage("enablePeopleOcclusion") var enablePeopleOcclusion = enablePeopleOcclusionDefault
+    @AppStorage("enablePlaneDetection") var enablePlaneDetection = enablePlaneDetectionDefault
+    @AppStorage("enableObjectOcclusion") var enableObjectOcclusion = enableObjectOcclusionDefault
+
     // Privacy
     @AppStorage("showingCoordinate") var showingCoordinateOfDevice = showingCoordinateDefault
 

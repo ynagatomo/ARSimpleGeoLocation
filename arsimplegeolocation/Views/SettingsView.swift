@@ -12,6 +12,9 @@ struct SettingsView: View {
     let appState: AppStateController
     @State private var distanceFilter = AppSettings.share.distanceFilter
     @State private var showingCoordinate = AppSettings.share.showingCoordinateOfDevice
+    @State private var enablePlaneDetection = AppSettings.share.enablePlaneDetection
+    @State private var enablePeopleOcclusion = AppSettings.share.enablePeopleOcclusion
+    @State private var enableObjectOcclusion = AppSettings.share.enableObjectOcclusion
 
     var body: some View {
         VStack {
@@ -46,7 +49,7 @@ struct SettingsView: View {
 
                 // Privacy settings
                 Section(content: {
-                    Toggle("Showing coordinate", isOn: $showingCoordinate)
+                    Toggle("Show coordinate", isOn: $showingCoordinate)
                         .onChange(of: showingCoordinate) { value in
                             AppSettings.share.showingCoordinateOfDevice = value
                         }
@@ -69,6 +72,24 @@ struct SettingsView: View {
                         }
                     } // HStack
                 }, header: { Text("Location Services") })
+
+                // AR capabilities
+                Section(content: {
+                    Toggle("Enable plane detection", isOn: $enablePlaneDetection)
+                        .onChange(of: enablePlaneDetection) { value in
+                            AppSettings.share.enablePlaneDetection = value
+                        }
+                    Toggle("Enable people occlusion", isOn: $enablePeopleOcclusion)
+                        .onChange(of: enablePeopleOcclusion) { value in
+                            AppSettings.share.enablePeopleOcclusion = value
+                        }
+                        .disabled(!ARViewController.isPeopeOcclusionSupported)
+                    Toggle("Enable object occlusion", isOn: $enableObjectOcclusion)
+                        .onChange(of: enableObjectOcclusion) { value in
+                            AppSettings.share.enableObjectOcclusion = value
+                        }
+                        .disabled(!ARViewController.isObjectOcclusionSupported)
+                }, header: { Text("AR Capabilities") })
 
                 // Assets
                 Section(content: {

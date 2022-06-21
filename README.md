@@ -54,6 +54,12 @@ I hope you find this project helpful. :)
 ![Image](images/ss2_240.jpeg)
 ![GIF](images/gif_480p.gif)
 
+You can enable the Object Occlusion in the Settings screen if you use iPhone or iPad, with LiDAR.
+
+![Image](images/ss3_240.jpg)
+![Image](images/ss4_240.jpg)
+![Image](images/ss5_240.jpg)
+
 Geographical Location Tracking during an AR session
 
 ![Image](images/arSimpleLocation_slide.png)

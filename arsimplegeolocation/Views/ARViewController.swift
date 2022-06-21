@@ -13,6 +13,13 @@ final class ARViewController: UIViewController {
     private var arView: ARView!
     private var arScene: ARScene!
 
+    static var isPeopeOcclusionSupported: Bool {
+        ARWorldTrackingConfiguration.supportsFrameSemantics(.personSegmentationWithDepth)
+    }
+    static var isObjectOcclusionSupported: Bool {
+        ARWorldTrackingConfiguration.supportsSceneReconstruction(.mesh)
+    }
+
     //    init() {
     //        super.init(nibName: nil, bundle: nil)
     //    }
@@ -30,6 +37,8 @@ final class ARViewController: UIViewController {
             arView = ARView(frame: .zero, cameraMode: .nonAR,
                             automaticallyConfigureSession: true)
         } else {
+            // automaticallyConfigureSession = true is Ok
+            // for scene reconstruction for mesh
             arView = ARView(frame: .zero, cameraMode: .ar,
                             automaticallyConfigureSession: true)
         }
@@ -53,10 +62,33 @@ final class ARViewController: UIViewController {
         #if !targetEnvironment(simulator)
         if !ProcessInfo.processInfo.isiOSAppOnMac {
             let config = ARWorldTrackingConfiguration()
+            if AppSettings.share.enablePlaneDetection { // Plane detection
+                config.planeDetection = [.horizontal]
+                debugLog("AR: plane detection was enabled.")
+            }
             config.worldAlignment = .gravityAndHeading // -Z is heading to north
-            if ARWorldTrackingConfiguration.supportsFrameSemantics(.personSegmentationWithDepth) {
-                debugLog("ARSession: personSegmentationWithDepth is supported.")
-                config.frameSemantics.insert(.personSegmentationWithDepth)
+            if AppSettings.share.enablePeopleOcclusion { // People occlusion
+                if ARViewController.isPeopeOcclusionSupported {
+                    config.frameSemantics.insert(.personSegmentationWithDepth)
+                    debugLog("AR: people occlusion was enabled.")
+                }
+            }
+            // [Note]
+            // When you enable scene reconstruction, ARKit provides a polygonal mesh
+            // that estimates the shape of the physical environment.
+            // If you enable plane detection, ARKit applies that information to the mesh.
+            // Where the LiDAR scanner may produce a slightly uneven mesh on a real-world surface,
+            // ARKit smooths out the mesh where it detects a plane on that surface.
+            // If you enable people occlusion, ARKit adjusts the mesh according to any people
+            // it detects in the camera feed. ARKit removes any part of the scene mesh that
+            // overlaps with people
+            if AppSettings.share.enableObjectOcclusion { // Object occlusion
+                if ARViewController.isObjectOcclusionSupported {
+                    // Enable the object occlusion
+                    config.sceneReconstruction = .mesh
+                    arView.environment.sceneUnderstanding.options.insert(.occlusion)
+                    debugLog("AR: object occlusion was enabled.")
+                }
             }
             arView.session.run(config)
         }
@@ -86,17 +118,17 @@ extension ARViewController {
 
 // MARK: - ARSessionDelegate
 extension ARViewController: ARSessionDelegate {
-    func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
-        debugLog("session(_:didAdd:) was called.")
-    }
-
-    func session(_ session: ARSession, didUpdate anchors: [ARAnchor]) {
-        debugLog("session(_:didUpdate:) was called.")
-    }
-
-    func session(_ session: ARSession, didRemove anchors: [ARAnchor]) {
-        debugLog("session(_:didRemove:) was called.")
-    }
+    //    func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
+    //        debugLog("session(_:didAdd:) was called.")
+    //    }
+    //
+    //    func session(_ session: ARSession, didUpdate anchors: [ARAnchor]) {
+    //        debugLog("session(_:didUpdate:) was called.")
+    //    }
+    //
+    //    func session(_ session: ARSession, didRemove anchors: [ARAnchor]) {
+    //        debugLog("session(_:didRemove:) was called.")
+    //    }
 
     //    func session(_ session: ARSession, didUpdate frame: ARFrame) {
     //        // You can get the camera's (device's) position in the virtual space
