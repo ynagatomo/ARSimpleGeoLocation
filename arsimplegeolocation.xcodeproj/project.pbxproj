@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB470A14291086B100FF2C50 /* NPSARModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB470A13291086B100FF2C50 /* NPSARModels.swift */; };
 		BA0557A7285D808800948C32 /* arsimplegeolocationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0557A6285D808800948C32 /* arsimplegeolocationApp.swift */; };
 		BA0557A9285D808800948C32 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0557A8285D808800948C32 /* HomeView.swift */; };
 		BA0557AB285D808A00948C32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0557AA285D808A00948C32 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB470A13291086B100FF2C50 /* NPSARModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPSARModels.swift; sourceTree = "<group>"; };
 		BA0557A3285D808800948C32 /* arsimplegeolocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = arsimplegeolocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA0557A6285D808800948C32 /* arsimplegeolocationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arsimplegeolocationApp.swift; sourceTree = "<group>"; };
 		BA0557A8285D808800948C32 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		BA0557B9285D913A00948C32 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
+				AB470A13291086B100FF2C50 /* NPSARModels.swift */,
 				BA0557BA285D916500948C32 /* ModelAsset.swift */,
 				BA0557CF285EDC9400948C32 /* ModelDataSet.swift */,
 				BA0557C6285DAB5200948C32 /* DeviceLocation.swift */,
@@ -273,6 +276,7 @@
 				BA6539E6285F31B6005D06E1 /* LocationUtility.swift in Sources */,
 				BA0557CC285DAF7300948C32 /* AppStateController.swift in Sources */,
 				BA0557C9285DAEEC00948C32 /* ARLocationView.swift in Sources */,
+				AB470A14291086B100FF2C50 /* NPSARModels.swift in Sources */,
 				BA0557C0285D9AA000948C32 /* ARViewController.swift in Sources */,
 				BA801013286001F000897E3D /* AppSettings.swift in Sources */,
 				BA0557C3285D9AD400948C32 /* ARScene.swift in Sources */,
