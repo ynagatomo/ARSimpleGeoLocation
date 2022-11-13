@@ -55,7 +55,7 @@ class ModelDataSet {
 //            altitude: 1804.0),        //               <== please change to a location near you
         ModelAsset(assetName: "Plane",
                    thumbnailFile: "plane128",
-                   assetFile: "toy_biplane",
-                   place: NPSPlace.ParkerOfficeCattyCorner())
+                   assetFile: "map_pointer",
+                   place: NPSPlace.ParkerOfficeDeskAppDebug())
     ]
 }

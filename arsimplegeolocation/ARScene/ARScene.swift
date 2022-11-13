@@ -61,11 +61,20 @@ extension ARScene {
     // in the virtual space, according to the changes of geographical location
     func updateLocation(device: DeviceLocation?, assets: [ModelAsset]) {
         debugLog("updateLocation(device:assets:) was called.")
-        guard let device, !assets.isEmpty else { return }
-
+        
+        let horizontalAccuracyLimit = (sceneState == .none) ? 5.0 : 4.9
+        let verticalAccuracyLimit = (sceneState == .none) ? 5.0 : 3.1
+        
+        guard let device,
+              !assets.isEmpty,
+              (device.horizontalAccuracy < horizontalAccuracyLimit),
+              (device.verticalAccuracy < verticalAccuracyLimit) else {
+            return
+        }
+            
         let currentDeviceLocation = device // in real space
         let currentDeviceTranslation = arView.cameraTransform.translation // in virtual space
-
+        
         if sceneState == .none {
             // setup the virtual world
             setupGeoEntities(currentDeviceLocation: currentDeviceLocation,
@@ -113,9 +122,12 @@ extension ARScene {
                                           altitude: $0.altitude,
                                           distanceAway: $0.distanceAway,
                                           entity: model)
-                model.scale = $0.scale
+                
+                var scale = model.scale(relativeTo: nil)
+                debugLog("model scale relative to parent: \(scale)")
                 model.orientation = simd_quatf(angle: $0.orientationOnYAxis,
                                                axis: SIMD3<Float>(0, 1, 0))
+                model.scale = $0.scale
 
                 let entityLoc = LocationUtility.Location(latitude: $0.latitude,
                                  longitude: $0.longitude,
@@ -127,6 +139,9 @@ extension ARScene {
 
                 anchor.addChild(model)
                 geoEntities.append(geoEntity)
+                
+                scale = model.scale(relativeTo: nil)
+                debugLog("model scale relative to parent: \(scale)")
 
                 if let animation = model.availableAnimations.first {
                     model.playAnimation(animation.repeat())

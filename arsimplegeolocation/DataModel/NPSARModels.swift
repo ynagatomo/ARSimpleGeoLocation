@@ -58,10 +58,16 @@ extension NPSPlace {
                         longitude: -104.79974943077401,
                         altitude: 1804.0)
     }
+    
+    static func ParkerOfficeDeskAppDebug() -> NPSPlace {
+        return NPSPlace(latitude: 39.519965,
+                        longitude: -104.799824,
+                        altitude: 1801.0)
+    }
 
     static func ParkerOfficeAcrossTheStreet() -> NPSPlace {
-        return NPSPlace(latitude: 39.52016,
-                        longitude: -104.80006,
+        return NPSPlace(latitude: 39.52033,
+                        longitude: -104.80062,
                         altitude: 1803.0)
     }
     
@@ -83,10 +89,10 @@ extension ModelAsset {
                   name: assetName,
                   thumbnailFile: thumbnailFile,
                   assetFile: assetFile,
-                  scale: SIMD3<Float>(0.25, 0.25, 0.25),
+                  scale: SIMD3<Float>(0.01, 0.01, 0.01),
                   orientationOnYAxis: 0,
-                  approachingDistance: 40.0,
-                  distanceAway: 100.0,
+                  approachingDistance: 5.0,
+                  distanceAway: 10.0,
                   latitude: place.latitude,
                   longitude: place.longitude,
                   altitude: place.altitude)

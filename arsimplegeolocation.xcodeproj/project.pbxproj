@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AB470A14291086B100FF2C50 /* NPSARModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB470A13291086B100FF2C50 /* NPSARModels.swift */; };
+		AB7BA9252921572E0038A5C1 /* map_pointer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = AB7BA9242921572E0038A5C1 /* map_pointer.usdz */; };
 		BA0557A7285D808800948C32 /* arsimplegeolocationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0557A6285D808800948C32 /* arsimplegeolocationApp.swift */; };
 		BA0557A9285D808800948C32 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0557A8285D808800948C32 /* HomeView.swift */; };
 		BA0557AB285D808A00948C32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0557AA285D808A00948C32 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		AB470A13291086B100FF2C50 /* NPSARModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPSARModels.swift; sourceTree = "<group>"; };
+		AB7BA9242921572E0038A5C1 /* map_pointer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = map_pointer.usdz; sourceTree = "<group>"; };
 		BA0557A3285D808800948C32 /* arsimplegeolocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = arsimplegeolocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA0557A6285D808800948C32 /* arsimplegeolocationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arsimplegeolocationApp.swift; sourceTree = "<group>"; };
 		BA0557A8285D808800948C32 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 		BA0557BC285D91E400948C32 /* ModelAssets */ = {
 			isa = PBXGroup;
 			children = (
+				AB7BA9242921572E0038A5C1 /* map_pointer.usdz */,
 				BA0557CD285EDC2D00948C32 /* toy_drummer.usdz */,
 				BA80100D285FFA2900897E3D /* toy_robot_vintage.usdz */,
 				BA80100F285FFA3200897E3D /* toy_biplane.usdz */,
@@ -236,6 +239,7 @@
 			files = (
 				BA80100E285FFA2900897E3D /* toy_robot_vintage.usdz in Resources */,
 				BA801010285FFA3200897E3D /* toy_biplane.usdz in Resources */,
+				AB7BA9252921572E0038A5C1 /* map_pointer.usdz in Resources */,
 				BA0557AE285D808A00948C32 /* Preview Assets.xcassets in Resources */,
 				BA0557AB285D808A00948C32 /* Assets.xcassets in Resources */,
 				BA0557CE285EDC2D00948C32 /* toy_drummer.usdz in Resources */,
@@ -413,7 +417,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"arsimplegeolocation/Preview Content\"";
-				DEVELOPMENT_TEAM = J5CY9Q9UP5;
+				DEVELOPMENT_TEAM = U2W2G74VB5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = arsimplegeolocation/Info.plist;
@@ -447,7 +451,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"arsimplegeolocation/Preview Content\"";
-				DEVELOPMENT_TEAM = J5CY9Q9UP5;
+				DEVELOPMENT_TEAM = U2W2G74VB5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = arsimplegeolocation/Info.plist;
